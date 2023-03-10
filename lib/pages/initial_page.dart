@@ -34,7 +34,7 @@ class _InitialPageState extends State<InitialPage> {
                 foreground: Paint()
                   ..style = PaintingStyle.stroke
                   ..strokeWidth = 3
-                  ..color = Colors.black87!,
+                  ..color = Colors.black87,
               ),
             ),
             Text(
@@ -44,12 +44,12 @@ class _InitialPageState extends State<InitialPage> {
                 foreground: Paint()
                   ..style = PaintingStyle.stroke
                   ..strokeWidth = 1
-                  ..color = Colors.black54!,
+                  ..color = Colors.black54,
               ),
             ),
             SizedBox(height: 400),
             Padding(
-              padding: const EdgeInsets.only(left: 50.0, right: 50.0, bottom: 20),
+              padding: const EdgeInsets.only(left: 50.0, right: 50.0, bottom: 15.0),
               child: RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
@@ -99,7 +99,7 @@ class _InitialPageState extends State<InitialPage> {
                     style: TextStyle(fontSize: 22),
                   ),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.teal,
+                    backgroundColor: Colors.teal,
                     shape: const StadiumBorder(),
                   ),
                   onPressed: () {},
@@ -117,8 +117,7 @@ class _InitialPageState extends State<InitialPage> {
                     style: TextStyle(fontSize: 22),
                   ),
                   style: OutlinedButton.styleFrom(
-                    primary: Colors.teal,
-                    shape: const StadiumBorder(),
+                    foregroundColor: Colors.teal, shape: const StadiumBorder(),
                     side: const BorderSide(color: Colors.green),
                   ),
                   onPressed: () {},
